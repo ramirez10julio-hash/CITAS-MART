@@ -1,0 +1,6 @@
+{
+  "name": "CitaSmart Barber - Barbería & Grooming de Autor",
+  "description": "Plantilla web premium de barbería y sistema de reserva guiada en directo con diseño Frosted Glassmorphism, catálogo de grooming y confirmación instantánea.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
