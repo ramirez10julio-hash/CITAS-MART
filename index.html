@@ -1531,14 +1531,14 @@
       <div class="footer-col">
         <h5>Ubicación</h5>
         <div style="font-size:13.5px; color:#9ca3af; line-height:1.6; margin-bottom:14px;">
-          Avenida de la Libertad 148,<br/>
-          Distrito Salamanca, 28006 Madrid, España.
+          Calle 93 # 11A-28,<br/>
+          Chicó Norte, Bogotá, Colombia.
         </div>
         <a href="https://maps.google.com" target="_blank" style="font-size:12.5px; color:var(--gold-light); display:inline-flex; align-items:center; gap:6px; margin-bottom:8px;">
           Ver en Google Maps ↗
         </a>
         <div style="font-size:13.5px; color:#ffffff; font-weight:600; margin-top:6px;">
-          📞 +34 912 345 678
+          📞 +57 912 345 6785
         </div>
         <div style="font-size:12.5px; color:#9ca3af;">
           ✉ contacto@citasmartbarber.com
@@ -1583,7 +1583,7 @@
         </div>
         <div style="display:flex; justify-content:space-between; border-top:1px solid rgba(255,255,255,0.06); padding-top:8px;">
           <span style="color:#9ca3af;">Total en salón:</span>
-          <span style="font-size:16px; font-weight:700; color:#ffffff;" id="modal-price">28€</span>
+          <span style="font-size:16px; font-weight:700; color:#ffffff;" id="modal-price">35000COP</span>
         </div>
       </div>
 
@@ -1598,7 +1598,7 @@
 
   <!-- Standalone Interactive JavaScript Engine -->
   <script>
-    let currentService = { id: 'corte-signature', name: 'Corte Signature Aureus', price: 28, duration: 45 };
+    let currentService = { id: 'corte-signature', name: 'Corte Signature Aureus', price: 35000, duration: 45 };
     let currentBarber = 'Mateo De La Rosa (Master)';
     let currentDate = 'Hoy (Jueves 24 Oct)';
     let currentTime = '11:30 AM';
@@ -1611,16 +1611,16 @@
 
       document.getElementById('sum-service').innerText = name;
       document.getElementById('sum-duration').innerText = duration + ' min';
-      document.getElementById('sum-price').innerText = price + '€';
+      document.getElementById('sum-price').innerText = price + 'COP';
     }
 
     function selectServiceInWizard(id) {
       const target = document.getElementById('reservar');
       if (target) target.scrollIntoView({ behavior: 'smooth' });
-      if (id === 'corte-signature') setService('corte-signature', 'Corte Signature Aureus', 28, 45);
-      if (id === 'ritual-barba') setService('ritual-barba', 'Ritual Barba & Navaja', 22, 35);
-      if (id === 'tinte-camuflaje') setService('tinte-camuflaje', 'Tinte & Camuflaje Gris', 35, 50);
-      if (id === 'master-aureus') setService('master-aureus', 'Combo Aureus Full Experience', 48, 75);
+      if (id === 'corte-signature') setService('corte-signature', 'Corte Signature Aureus', 35000, 45);
+      if (id === 'ritual-barba') setService('ritual-barba', 'Ritual Barba & Navaja', 45000, 35);
+      if (id === 'tinte-camuflaje') setService('tinte-camuflaje', 'Tinte & Camuflaje Gris', 65000, 50);
+      if (id === 'master-aureus') setService('master-aureus', 'Combo Aureus Full Experience', 120000, 75);
     }
 
     function setBarber(name, cardId) {
@@ -1647,7 +1647,7 @@
     }
 
     function addToCart(productName, price) {
-      alert('✓ ' + productName + ' (' + price.toFixed(2) + '€) añadido a tu bolsa de grooming.');
+      alert('✓ ' + productName + ' (' + price.toFixed(2) + 'COP) añadido a tu bolsa de grooming.');
     }
 
     function confirmBooking() {
@@ -1660,14 +1660,14 @@
       document.getElementById('modal-service').innerText = currentService.name;
       document.getElementById('modal-barber').innerText = currentBarber;
       document.getElementById('modal-datetime').innerText = currentDate + ' - ' + currentTime;
-      document.getElementById('modal-price').innerText = currentService.price + '€';
+      document.getElementById('modal-price').innerText = currentService.price + 'COP';
 
       // WhatsApp link generator
       const waText = encodeURIComponent(
         '¡Hola CitaSmart Barber! Deseo confirmar mi turno:\n\n' +
         '✂ Localizador: ' + code + '\n' +
         '👤 Cliente: ' + name + '\n' +
-        '💈 Servicio: ' + currentService.name + ' (' + currentService.price + '€)\n' +
+        '💈 Servicio: ' + currentService.name + ' (' + currentService.price + 'COP)\n' +
         '🧔 Barbero: ' + currentBarber + '\n' +
         '📅 Fecha/Hora: ' + currentDate + ' a las ' + currentTime + '\n' +
         '📝 Notas: ' + notes + '\n\n¡Muchas gracias!'
